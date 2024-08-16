@@ -36,3 +36,18 @@
 .ghost:hover {
   background-color: var(--gray-light);
 }
+
+.arrow {
+  display: inline-block;
+
+  margin-left: 10px;
+}
+
+.down {
+  transition: all 0.5s;
+  transform: rotate(90deg);
+}
+
+.primary svg {
+  fill: var(--white);
+}

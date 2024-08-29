@@ -15,7 +15,7 @@ export const Button = (props: ButtonProps) => {
     s.button,
     { [s.primary]: appearance === 'primary' },
     { [s.ghost]: appearance === 'ghost' },
-    { className: className }
+    className
   )
 
   const arrowClassName = cn(s.arrow, { [s.down]: arrow === 'down' })

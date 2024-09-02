@@ -1,11 +1,8 @@
-'use client'
-
 import { Button, HTag, Paragraph, Rating, Tag } from '@/components'
-import { useState } from 'react'
+import { Menu } from '@/app/components/menu'
 
-export default function Home() {
-  const [rating, setRating] = useState<number>(4)
-  const a = 1
+export default async function Home() {
+  // const [rating, setRating] = useState<number>(4)
 
   return (
     <main>
@@ -35,7 +32,8 @@ export default function Home() {
         primary
       </Tag>
       <Rating rating={4} />
-      <Rating rating={rating} isEditable={true} setRating={setRating} />
+      {/*<Rating rating={rating} isEditable={true} setRating={setRating} />*/}
+      <Menu />
     </main>
   )
 }

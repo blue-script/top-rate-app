@@ -11,6 +11,7 @@ export const Rating = (props: RatingProps) => {
 
   const [ratingArray, setRatingArray] = useState<ReactNode[]>(new Array(5).fill(<></>))
 
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     constructRating(rating)
   }, [rating])
@@ -53,5 +54,11 @@ export const Rating = (props: RatingProps) => {
     setRating(num)
   }
 
-  return <div {...rest}>{ratingArray}</div>
+  return (
+    <div {...rest}>
+      {ratingArray.map((r, i) => (
+        <span key={i}>{r}</span>
+      ))}
+    </div>
+  )
 }

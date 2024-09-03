@@ -1,3 +1,6 @@
+import { TopLevelCategory } from '@/interfaces/page.interface'
+import { ReactElement } from 'react'
+
 export interface PageItem {
   alias: string
   title: string
@@ -11,4 +14,11 @@ export interface MenuItem {
   }
   isOpened?: boolean
   pages: PageItem[]
+}
+
+export interface FirstLevelMenuItem {
+  route: string
+  name: string
+  icon: ReactElement
+  id: TopLevelCategory
 }

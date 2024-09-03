@@ -1,10 +1,13 @@
+import s from './sidebar.module.css'
+import { Menu } from '@/app/components/menu/menu'
+import { createContext, useState } from 'react'
+import { TopLevelCategory } from '@/interfaces/page.interface'
 import { SidebarProps } from '@/components/sidebar/sidebar.props'
-import { Menu } from '@/app/components/menu'
 
-export const Sidebar = (props: SidebarProps) => {
+export function Sidebar(props: SidebarProps) {
   return (
-    <aside {...props}>
+    <div {...props}>
       <Menu />
-    </aside>
+    </div>
   )
 }

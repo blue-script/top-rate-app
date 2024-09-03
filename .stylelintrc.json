@@ -9,6 +9,19 @@
   "rules": {
     "indentation": [2],
     "color-hex-case": "upper",
-    "color-hex-length": "long"
+    "color-hex-length": "long",
+    "order/properties-order": [
+      [
+        {
+          "properties": [
+            "all"
+          ],
+          "emptyLineBefore": "never"
+        },
+        {
+          "unspecified": "bottomAlphabetical"
+        }
+      ]
+    ]
   }
 }

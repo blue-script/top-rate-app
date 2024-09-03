@@ -1,5 +1,4 @@
 import { MenuItem } from '@/interfaces/menu.interface'
-import { notFound } from 'next/navigation'
 
 export async function getMenu(firstCategory: number): Promise<MenuItem[]> {
   const res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/top-page/find`, {

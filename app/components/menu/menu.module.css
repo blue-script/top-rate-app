@@ -1,0 +1,92 @@
+.first_level {
+  list-style: none;
+}
+
+.first_level > li {
+  margin-bottom: 20px;
+}
+
+.first_level__item {
+  display: grid;
+
+  align-items: center;
+
+  color: var(--gray-middle);
+
+  font-size: 18px;
+
+  font-weight: 500;
+  grid-template-columns: 24px 1fr;
+  gap: 20px;
+}
+
+.first_level__item_active,
+.first_level__item:hover {
+  color: var(--primary);
+}
+
+.first_level__item_active svg,
+.first_level__item:hover svg {
+  fill: var(--primary);
+}
+
+.second_level {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 12px;
+
+  padding: 8px 0;
+
+  padding-left: 32px;
+
+  list-style: none;
+
+  border-left: 1px solid var(--gray-line);
+}
+
+.second_level__item:last-child > button {
+  margin-bottom: 0;
+}
+
+.second_level__item_button {
+  all: unset;
+
+  display: block;
+
+  margin-bottom: 10px;
+  padding: 0;
+
+  cursor: pointer;
+
+  text-transform: uppercase;
+
+  color: var(--gray-middle);
+
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.second_level__block {
+  /* display: none; */
+}
+
+.second_level__block_open {
+  display: block;
+}
+
+.third_level {
+  list-style: none;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.third_level__item {
+  margin-bottom: 10px;
+}
+
+.third_level__item_active,
+.third_level__item:hover {
+  color: var(--primary);
+}

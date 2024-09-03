@@ -1,6 +1,8 @@
 :root {
   --dark: #3B434E;
   --gray-light: #EBEBEB;
+  --gray-middle: #787D85;
+  --gray-line: #DFDFDF;
   --white: #FFFFFF;
   --primary: #7653FC;
   --primary-hover: #6647DA;
